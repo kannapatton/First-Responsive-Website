@@ -1,0 +1,128 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 4fr 4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "main main main"
+      "one two three";
+  }
+  
+  .main { grid-area: main;
+    display: flex;
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(49, 204, 204);
+         }
+    
+  p{
+    margin: 50px 100px;
+  }
+  .one { grid-area: one; 
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: azure;
+    }
+  
+  .two { grid-area: two;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: azure;
+}
+  
+  .three { grid-area: three;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: azure;
+}
+
+#h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:x-large;
+}
+
+  .bar1{
+    margin: auto;
+    margin-top: 2em;
+    height: 2em;
+    width: 10em;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(80, 185, 255);
+
+  }
+  .bar2{
+    margin: auto;
+    margin-top: 2em;
+    height: 2em;
+    width: 10em;
+    align-items: center;
+    justify-content: center;
+    background-color: coral;
+  }
+  .bar3{
+    margin: auto;
+    margin-top: 2em;
+    height: 2em;
+    width: 10em;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(49, 204, 204);
+
+  }
+ 
+@media (max-width: 576px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 4fr 4fr 4fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "main"
+      "one"
+      "two"
+      "three";
+  }
+  .main { grid-area: main;
+    display: flex;
+    font-family:'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(80, 185, 255);
+     }
+     .one { grid-area: one; 
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:white;
+      color:black;
+      }
+    
+    .two { grid-area: two;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:white;
+      color:black;
+  }
+    
+    .three { grid-area: three;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:white;
+      color:black;
+  }
+
+}
